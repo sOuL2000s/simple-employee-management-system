@@ -1,0 +1,245 @@
+/* General container for the login form */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: darkgoldenrod; /* Example background color to highlight the centering */
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 400px;
+  background: rgb(198, 141, 67);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+}
+
+/* Header for the login form */
+.wrapper h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Container for input elements */
+.wrapper .input-box {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Styling for input elements */
+.input-box input {
+  width: 100%;
+  height: 45px;
+  background: transparent;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* Placeholder styling for input elements */
+.input-box input::placeholder {
+  color: white;
+}
+
+/* Icon positioning within input boxes */
+.input-box .icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 16px;
+}
+
+/* Styling for forgot password link */
+.wrapper .forgot-password {
+  font-size: 12px;
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.forgot-password a {
+  color: #1e3991;
+  text-decoration: none;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+  color: deeppink;
+}
+
+/* Button styling */
+.wrapper button {
+  width: 100%;
+  height: 45px;
+  background: rgb(39, 59, 97);
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+}
+
+.wrapper button:hover {
+  background-color: blue;
+}
+
+/* Styling for the register link */
+.wrapper .register-link {
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.register-link p {
+  margin: 0;
+}
+
+.register-link p a {
+  color: #1e3991;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-link p a:hover {
+  text-decoration: underline;
+  color: deeppink;
+}
+
+/* General container for the registration form */
+.register-container {
+  width: 100%;
+  max-width: 400px;
+  background: rgba(76, 135, 243, 0.9);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 30px 20px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+/* Header for the registration form */
+.register-form h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Container for input elements */
+.register-input-box {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Styling for input and select elements */
+.register-input-box input,
+.register-input-box select {
+  width: 100%;
+  height: 45px;
+  background: transparent;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 0 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.register-input-box input::placeholder,
+.register-input-box select::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Icon positioning within input boxes */
+.register-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+}
+
+/* Styling for forgot password link */
+.register-forgot-password {
+  font-size: 12px;
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.register-forgot-password a {
+  color: #1e3991;
+  text-decoration: none;
+}
+
+.register-forgot-password a:hover {
+  text-decoration: underline;
+  color: deeppink;
+}
+
+/* Button styling */
+.register-container button {
+  width: 100%;
+  height: 45px;
+  background: darkblue;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+}
+
+.register-container button:hover {
+  background-color: rgb(39, 59, 97);
+}
+
+/* Styling for the register link */
+.register-container .register-link {
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.register-link p {
+  margin: 0;
+}
+
+.register-link p a {
+  color: #1e3991;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-link p a:hover {
+  text-decoration: underline;
+  color: deeppink;
+}
+
+/* Styling for select options */
+.register-input-box select option {
+  background-color: darkgray;
+  color: #fff;
+}

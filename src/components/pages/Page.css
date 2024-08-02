@@ -1,0 +1,112 @@
+/* General styles for the ProfilePage */
+body {
+  font-family: Arial, sans-serif;
+  background-color: burlywood;
+  margin: 0;
+  padding: 0;
+}
+
+.profile-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.navbar {
+  width: 100%;
+}
+
+/* Profile card styles */
+.profile {
+  width: 400px;
+  max-width: 90%;
+  background: rgb(198, 141, 67);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  color: black;
+  backdrop-filter: blur(30px);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px;
+  text-align: center;
+}
+
+.profile div {
+  margin-bottom: 5px; /* Reduced margin between divs */
+}
+
+.profile h1,
+.profile h2,
+.profile h3 {
+  margin: 5px 0;
+}
+
+.profile h1 {
+  color: #fff;
+  /* text-align: left; */
+}
+
+.profile h2 {
+  color: #d4edda;
+}
+
+.profile h3 {
+  color: #cce5ff;
+}
+
+.profile div {
+  margin-bottom: 10px;
+}
+
+/* Logout button styles */
+.logout-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.logout-btn button {
+  width: 200px;
+  height: 45px;
+  background: darkblue;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 700;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.logout-btn button:hover {
+  background-color: rgb(39, 59, 97);
+}
+
+.box-options {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  /* color: aqua;
+   */
+  /* background-color: aqua; */
+}
+
+.box-option {
+  padding: 10px;
+  width: 30%;
+  background: rgb(198, 141, 67);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+.box-option h3 {
+  margin-top: 0;
+}
